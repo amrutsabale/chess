@@ -4,12 +4,14 @@ import Game from "./components/pages/Game";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/game" element={<Game />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="h-screen bg-gray-900">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/play" element={<Game />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
