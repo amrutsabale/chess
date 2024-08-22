@@ -48,7 +48,7 @@ export class GameManager {
                 this.handleInitGame(socket)
             }
             if (message.type === MOVE) {
-                this.handleMakeMove(socket, message.move);
+                this.handleMakeMove(socket, message.payload.move);
             }
         })
     }
